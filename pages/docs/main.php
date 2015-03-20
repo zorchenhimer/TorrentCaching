@@ -32,6 +32,6 @@
         "url" => _configs()->website->url . "torrent/" . strtoupper(sha1("dexter.s03.e07")) . ".torrent",
         "magnet" => "magnet:?xt=urn:btih:" . strtoupper(sha1("dexter.s03.e07")) . "&tr=" . implode("&tr=", _configs()->trackers)
     );
-    echo json_encode($array);
+    echo json_encode($array, JSON_PRETTY_PRINT);
 ?>
 </pre>
